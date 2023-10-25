@@ -1,51 +1,40 @@
-# NeuralStyleTransferWebApp
-NeuralStyleTransferWebApp is basically a web app which does what it says :), anyways it's take two images from user , one is content image and other is style image and it basically generate a new image whose content is like of content image but with the style of style image, thus it lets you transform images into different styles. It uses deep learning technique called "Neural Style Transfer" to transform the image.
+# This is an end to end ML project to predict Student performance in Maths.
+mlproject is basically a web app, it has a main apge which just says 'Welcome to home Page'.(can be made more beautiful in fututre but this is not the current objective of this repo).Then from there you got to predict page by just adding 'predictdata' to url of home page. Here you can fill the field and get your predicted scores in Math. This repos also contains notebook for EDA on data and also tying out different ML models to get highest scoring model.
 
 ## How to run the app
 
-1. git clone https://github.com/kashif-flask/NeuralStyleTransferWebApp.git
+1. git clone [https://github.com/kashif-flask/NeuralStyleTransferWebApp.git](https://github.com/kashif-flask/mlproject.git)
 2. Install all dependencies given in requirements.txt file in cmd using  pip install -r requirements.txt
 3. run the file app.py in cmd , you will get local host http://127.0.0.1:5000/ 
 4. Now open the url in web browser.
 5. You can also create docker image by writing command in cmd:"docker build -t styletransferapp . " and then just run the image cmd:docker run -p 5000:5000 styletransferapp, now you can run the app on localhost:5000
+6. Then you will see the home page
 
 ## How to use app
-1. Select content image that need to transformed and style image whose style will be used to transform content image.
-2. Make sure you only use png,jpeg and jpg format files otherwise it will not accept.
-3. Select learning rate at which to update pixels of content image ,default 0.01, smaller the number more steps you require to bring desirable change in your content image but more refined result will be.
-4. Select content loss weight and style loss weight, it basically tells how much importance is given to content image's content and style image's style in final generated image.
-5. Output image width and height, what shape output image should be, max is 400 size because my GPU of 4GB wasn't allowing bigger image to train ;(.
-6. Number of steps of training,it lets you choose number of iterations to update your content image with style image, greater the number of steps better the result will be but it will take longer.
-7. Simply click on Submit button.
+1. Once you see the home page
+   ![alt text](https://github.com/kashif-flask/mlproject/blob/main/home.PNG)
 
-## Features
-- Empty file checked , so you can't give no file and also type of file checked , it only allows png,jpeg and jpg files.
-- Once the image generated it will be displayed on screen and you can download it by simply clicking in image.
+2. Now add '/predictdata' to url, you will see the prediction page
+   ![alt text](https://github.com/kashif-flask/mlproject/blob/main/predictpage.PNG)
 
-## Future fetaures
-1. Make it more beautiful to look, i wish i was good in web designing :(.
-2. Deploy on some web server , it tried to deploy on heroku but free version won't take such a big model (Broke me ☹ ), but people can try deploying on other platform like google cloud platform, you have to provide your card details their.
-3. Give user flexibility to choose torchvision model on their own , here i used pretrained VGG19.
+3. Now fill in the details of fileds
+   • Gender: The gender of the student (male/female)
+   • Race/ethnicity: The student's racial or ethnic background (Asian, African-American, Hispanic, etc.), the dataset contain groups only and not the actual race
+   • Parental level of education: The highest level of education attained by the student's parent(s) or guardian(s)
+   • Lunch: Whether the student receives free or reduced-price lunch (yes/no)
+   • Test preparation course: Whether the student completed a test preparation course (yes/no)
+   • Reading score: The student's score on a standardized reading test
+   • Writing score: The student's score on a standardized writing test
 
-## Dependencie
-- Flask
-- Pytorch
-- Torchvision
-- Pillow
-# Images i used 
-![alt text](https://github.com/kashif-flask/mlproject/blob/main/home.PNG)
-
-![alt text](https://github.com/kashif-flask/mlproject/blob/main/predictpage.PNG)
-
-![alt text](https://github.com/kashif-flask/mlproject/blob/main/predict.PNG)
-
-## What the app looks like
-# First Page
-
-![alt text](https://github.com/kashif-flask/NeuralStyleTransferWebApp/blob/main/First_page.PNG)
-
-# After transform
+4. Then click on predict button to get prediction like:
+   ![alt text](https://github.com/kashif-flask/mlproject/blob/main/predict.PNG)
 
 
-![alt text](https://github.com/kashif-flask/NeuralStyleTransferWebApp/blob/main/generated.PNG)
+
+
+
+
+
+
+
 
