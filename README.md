@@ -1,5 +1,5 @@
 # This is an end to end ML project to predict Student performance in Maths.
-mlproject is basically a web app, it has a main apge which just says 'Welcome to home Page'.(can be made more beautiful in fututre but this is not the current objective of this repo).Then from there you got to predict page by just adding 'predictdata' to url of home page. Here you can fill the field and get your predicted scores in Math. This repos also contains notebook for EDA on data and also tying out different ML models to get highest scoring model.
+mlproject is basically a web app, it has a main page which just says 'Welcome to home Page'.(can be made more beautiful in fututre but this is not the current objective of this repo).Then from there you got to predict page by just adding 'predictdata' to url of home page. Here you can fill the field and get your predicted scores in Math. This repos also contains notebook for EDA on data and also tying out different ML models to get highest scoring model.
 
 ## How to run the app
 
@@ -7,7 +7,7 @@ mlproject is basically a web app, it has a main apge which just says 'Welcome to
 2. Install all dependencies given in requirements.txt file in cmd using  pip install -r requirements.txt
 3. run the file app.py in cmd , you will get local host http://127.0.0.1:5000/ 
 4. Now open the url in web browser.
-5. You can also create docker image by writing command in cmd:"docker build -t styletransferapp . " and then just run the image cmd:docker run -p 5000:5000 styletransferapp, now you can run the app on localhost:5000
+5. You can also create docker image by writing command in cmd:"docker build -t studentmarks . " and then just run the image cmd:docker run -p 5000:5000 studentmarks, now you can run the app on localhost:5000
 6. Then you will see the home page
 
 ## How to use app
