@@ -9,7 +9,7 @@ mlproject is basically a web app, it has a main page which just says 'Welcome to
 4. Now open the url in web browser.
 5. You can also create docker image by writing command in cmd:"docker build -t studentmarks . " and then just run the image cmd:docker run -p 5000:5000 studentmarks, now you can run the app on localhost:5000
 6. Then you will see the home page
-7. If you wanr to run just the app and don't need code, then pull image from my docker hub , write in cmd: docker pull kashif09/studentmarks:latest and then just run as in step 5
+7. If you want to run just the app and don't need code, then pull image from my docker hub , write in cmd: docker pull kashif09/studentmarks:latest and then just run as in step 5
 
 ## How to use app
 1. Once you see the home page
