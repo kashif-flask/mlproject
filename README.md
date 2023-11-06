@@ -3,7 +3,7 @@ mlproject is basically a web app, it has a main page which just says 'Welcome to
 
 ## How to run the app
 
-1. git clone [https://github.com/kashif-flask/NeuralStyleTransferWebApp.git](https://github.com/kashif-flask/mlproject.git)
+1. git clone https://github.com/kashif-flask/mlproject.git
 2. Install all dependencies given in requirements.txt file in cmd using  pip install -r requirements.txt
 3. run the file app.py in cmd , you will get local host http://127.0.0.1:5000/ 
 4. Now open the url in web browser.
